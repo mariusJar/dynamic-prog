@@ -1,4 +1,4 @@
-// Write a function `fin(n)` that takes in a number as an argument.
+// Write a function `fib(n)` that takes in a number as an argument.
 // The function should return the n-th number of the Fibonacci sequence.
 
 // Fibonacci sequence - the 1st and 2nd number of the sequence is 1.
