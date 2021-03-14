@@ -15,7 +15,7 @@ const fib = (n) => {
   return table[n]
 }
 
-fib(6) // 8
-fib(7) // 13
-fib(8) // 21
-// fib(50); // 12586269025
+console.log(fib(6)) // 8
+console.log(fib(7)) // 13
+console.log(fib(8)) // 21
+console.log(fib(50)) // 12586269025

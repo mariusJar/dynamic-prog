@@ -14,10 +14,10 @@ const fib = (n) => {
   return fib(n - 1) + fib(n - 2)
 }
 
-fib(6) // 8
-fib(7) // 13
-fib(8) // 21
-// fib(50); // 12586269025
+console.log(fib(6)) // 8
+console.log(fib(7)) // 13
+console.log(fib(8)) // 21
+// console.log(fib(50)); // 12586269025
 
 // Fib function O(2^n) time
 // fib(50) = 2^50 steps = 1.12e+15
@@ -33,7 +33,7 @@ const fibMemo = (n, memo = {}) => {
   return memo[n]
 }
 
-fibMemo(6) // 8
-fibMemo(7) // 13
-fibMemo(8) // 21
-fibMemo(50) // 12586269025
+console.log(fibMemo(6)) // 8
+console.log(fibMemo(7)) // 13
+console.log(fibMemo(8)) // 21
+console.log(fibMemo(50)) // 12586269025

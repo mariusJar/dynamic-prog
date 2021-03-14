@@ -25,11 +25,11 @@ const howSum = (targetSum, numbers) => {
 // time O(n^m * m)
 // space O(m)
 
-howSum(7, [2, 3]) // [3, 2, 2]
-howSum(7, [5, 3, 4, 7]) // [4, 3]
-howSum(7, [2, 4]) // null
-howSum(8, [2, 3, 5]) // [2, 2, 2, 2]
-// howSum(300, [7, 14]) // null
+console.log(howSum(7, [2, 3])) // [3, 2, 2]
+console.log(howSum(7, [5, 3, 4, 7])) // [4, 3]
+console.log(howSum(7, [2, 4])) // null
+console.log(howSum(8, [2, 3, 5])) // [2, 2, 2, 2]
+// console.log(howSum(300, [7, 14])) // null
 
 // _______________howSum Memoization____________________
 
@@ -58,8 +58,8 @@ const howSumMemo = (targetSum, numbers, memo = {}) => {
 // time O(n * m^2)
 // space O(m^2)
 
-howSumMemo(7, [2, 3]) // [3, 2, 2]
-howSumMemo(7, [5, 3, 4, 7]) // [4, 3]
-howSumMemo(7, [2, 4]) // null
-howSumMemo(8, [2, 3, 5]) // [2, 2, 2, 2]
-howSumMemo(300, [7, 14]) // null
+console.log(howSumMemo(7, [2, 3])) // [3, 2, 2]
+console.log(howSumMemo(7, [5, 3, 4, 7])) // [4, 3]
+console.log(howSumMemo(7, [2, 4])) // null
+console.log(howSumMemo(8, [2, 3, 5])) // [2, 2, 2, 2]
+console.log(howSumMemo(300, [7, 14])) // null

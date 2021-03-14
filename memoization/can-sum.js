@@ -17,11 +17,11 @@ const canSum = (targetSum, numbers) => {
   return false
 }
 
-canSum(7, [2, 3]) // true
-canSum(7, [5, 3, 4, 7]) // true
-canSum(7, [2, 4]) // false
-canSum(8, [2, 3, 5]) // true
-// canSum(300, [7, 14]); // false
+console.log(canSum(7, [2, 3])) // true
+console.log(canSum(7, [5, 3, 4, 7])) // true
+console.log(canSum(7, [2, 4])) // false
+console.log(canSum(8, [2, 3, 5])) // true
+// console.log(canSum(300, [7, 14])); // false
 
 // _______________canSum Memoization_________________
 
@@ -42,8 +42,8 @@ const canSumMemo = (targetSum, numbers, memo = {}) => {
   return false
 }
 
-canSumMemo(7, [2, 3]) // true
-canSumMemo(7, [5, 3, 4, 7]) // true
-canSumMemo(7, [2, 4]) // false
-canSumMemo(8, [2, 3, 5]) // true
-canSumMemo(300, [7, 14]) // false
+console.log(canSumMemo(7, [2, 3])) // true
+console.log(canSumMemo(7, [5, 3, 4, 7])) // true
+console.log(canSumMemo(7, [2, 4])) // false
+console.log(canSumMemo(8, [2, 3, 5])) // true
+console.log(canSumMemo(300, [7, 14])) // false

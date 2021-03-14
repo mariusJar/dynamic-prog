@@ -33,9 +33,10 @@ const bestSum = (targetSum, numbers) => {
 // time O(n^m * m)
 // space O(m^2)
 
-bestSum(7, [5, 3, 4, 7]) // [7]
-bestSum(8, [2, 3, 5]) // [4, 4]
-// bestSum(100, [1, 2, 5, 25]) // [25, 25, 25, 25]
+console.log(bestSum(7, [5, 3, 4, 7])) // [7]
+console.log(bestSum(8, [2, 3, 5])) // [3, 5]
+console.log(bestSum(8, [1, 4, 5])) // [4, 4]
+// console.log(bestSum(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
 
 // _______________bestSum Memoization___________________
 
@@ -72,6 +73,7 @@ const bestSumMemo = (targetSum, numbers, memo = {}) => {
 // time O(n * m^2)
 // space O(m^2)
 
-bestSumMemo(7, [5, 3, 4, 7]) // [7]
-bestSumMemo(8, [2, 3, 5]) // [4, 4]
-bestSumMemo(100, [1, 2, 5, 25]) // [25, 25, 25, 25]
+console.log(bestSumMemo(7, [5, 3, 4, 7])) // [7]
+console.log(bestSumMemo(8, [2, 3, 5])) // [3, 5]
+console.log(bestSumMemo(8, [1, 4, 5])) // [4, 4]
+console.log(bestSumMemo(100, [1, 2, 5, 25])) // [25, 25, 25, 25]
